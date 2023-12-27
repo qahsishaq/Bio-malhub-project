@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Quiz Button -->
+    <div class="start-btn"><button>Start Quiz</button></div>
+    <!-- info Box -->
+    <div class="info-box">
+      <span class="some-rules">Some Rules of this Quiz</span>
+      <div class="info-list">
+        <div class="info">
+          1. You will have only <span>15 seconds</span> per question.
+        </div>
+        <div class="info">
+          2. Once you select your answer, it cannot be undone.
+        </div>
+        <div class="info">
+          3. You can't select any option once timer goes off.
+        </div>
+        <div class="info">4. You can't exit from an ongoing Quiz session.</div>
+        <div class="info">
+          5. You will get points for every correct answer chosen.
+        </div>
+        <div class="info">6. Good luck!</div>
+      </div>
+
+      <div class="buttons">
+        <button class="quit">Exit Quiz</button>
+        <button class="restart">Continue</button>
+      </div>
+    </div>
+    <!-- Quiz Box -->
+    <div class="quiz-box">
+      <header>
+        <div class="title">Fantastic Quiz Application</div>
+        <div class="timer">
+          <div class="timer-left-txt">Time Left</div>
+          <div class="timer-sec">15</div>
+        </div>
+        <div class="time-line"></div>
+      </header>
+      <header class="headie">
+        <div class="que-text">
+          <!-- Here I will insert questions from Javascript -->
+        </div>
+        <div class="option-list">
+          <!-- Here I will insert options list from Javascript -->
+        </div>
+      </header>
+      <!-- footer of Quiz Box -->
+      <footer>
+        <div class="total-que">
+          <!-- Here I've inserted Question count number from Javascript -->
+        </div>
+        <button class="next-btn">Next Que</button>
+      </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result-box">
+      <div class="icon">
+        <img src="./proset/crown-solid.svg" alt="" />
+      </div>
+      <div class="complete-text">You've completed the Test!</div>
+      <div class="score-text">
+        <!--score result will be inserted from Javascript -->
+      </div>
+      <div class="buttons">
+        <button class="restart">Replay Quiz</button>
+        <button class="quit">Quit Quiz</button>
+      </div>
+    </div>
+  </body>
+  <script src="JavaScript/questions.js"></script>
+  <script src="./JavaScript/script.js"></script>
+  <script src="https://kit.fontawesome.com/f65ffccb95.js" crossorigin="anonymous"></script>
+</html>
