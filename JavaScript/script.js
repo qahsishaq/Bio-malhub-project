@@ -94,7 +94,7 @@ next_btn.onclick = () => {
 //getting questions and options from array
 function showQuestions(index) {
   const que_text = document.querySelector(".que-text");
-  const option_list = document.querySelector(".option-list")
+  // const option_list = document.querySelector(".option-list")
 
   // creating a new span and div tag for question and options and passing the value using array
 
@@ -107,7 +107,7 @@ function showQuestions(index) {
   let option_tag =
     '<div class="option"><span>' +
     questions[index].options[0] +
-    '</span></div>';
+    '</span></div>'+
   '<div class="option"><span>' +
     questions[index].options[1] +
     '</span></div>' +
@@ -132,9 +132,9 @@ function showQuestions(index) {
 //creating the new div tags which are for icons
 
 let crossIconTag =
-  '<div class= "icon tick"><i class="fa-regular fa-circle-xmark"></i></div>';
+  '<div class= "icon tick"><img src= "proset/circle-xmark-regular.svg"></div>';
 let tickIconTag =
-  '<div class= "icon tick"><i class="fa-regular fa-circle-check"></i></div>';
+  '<div class= "icon tick"><img src= "proset/circle-check-regular.svg"></div>';
 
 function optionSelected(answer) {
   clearInterval(counter); // clear counter
