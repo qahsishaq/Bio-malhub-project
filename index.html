@@ -20,7 +20,7 @@
       <span class="some-rules">Some Rules of this Quiz</span>
       <div class="info-list">
         <div class="info">
-          1. You will have only <span>15 seconds</span> per question.
+          1. You  have 150 seconds to answer <span>15 seconds  per question recommended.</span>.
         </div>
         <div class="info">
           2. Once you select your answer, it cannot be undone.
@@ -50,13 +50,39 @@
         </div>
         <div class="time-line"></div>
       </header>
-      <header class="headie">
-        <div class="que-text">
+      <header id="headie">
+        <div class="question" id="question">
           <!-- Here I will insert questions from Javascript -->
         </div>
-        <div class="option-list">
+        <!-- <div class="option-list"> -->
           <!-- Here I will insert options list from Javascript -->
-        </div>
+          <!-- '<div class="option"><span>' +
+            questions[index].options[0] +
+            '</span></div>'+
+          '<div class="option"><span>' +
+            questions[index].options[1] +
+            '</span></div>' +
+            '<div class="option"><span>' +
+            questions[index].options[2] +
+            '</span></div>'+
+            '<div class="option"><span>' +
+            questions[index].options[3] +
+            '</span></div>'; -->
+
+    
+        <!-- </div> -->
+
+<!--  DEMO BUTTON OPTIONS -->
+              <div id="answer-buttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+              </div>
+              <button id="next-btnn">Next</button>
+
+
+
       </header>
       <!-- footer of Quiz Box -->
       <footer>
@@ -84,5 +110,6 @@
   </body>
   <script src="JavaScript/questions.js"></script>
   <script src="./JavaScript/script.js"></script>
+  <script src="./JavaScript/secondquestion.js"></script>
   <script src="https://kit.fontawesome.com/f65ffccb95.js" crossorigin="anonymous"></script>
 </html>

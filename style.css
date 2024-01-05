@@ -169,7 +169,7 @@ section {
   padding: 25px 30px 20px 30px;
   background: white;
 }
-section .que-text {
+section .question{
   font-size: 25px;
   font-weight: 600;
 }
@@ -199,7 +199,7 @@ section .option-list .option:hover {
   background: #cce5ff;
   border: 1px solid #b8daff;
 }
-
+/* 
 section .option-list .option.correct {
   color: #155724;
   background: #d4edda;
@@ -210,7 +210,7 @@ section .option-list .option.incorrect {
   color: #721c24;
   background: #f8d7da;
   border: 1px solid #f5c6cb;
-}
+} */
 section .option-list .option.disabled {
   pointer-events: none;
 }
@@ -351,8 +351,53 @@ footer button.show {
   color: #fff;
   background: #007bff;
 }
-.headie{
+#headie{
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: fit-content;
+  padding-bottom: 9px;
+}
+
+
+
+/* DEMO */
+.btn{
+  background-color: white;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover:not([disabled]){
+  background-color: black;
+  color:white;
+
+}
+.btn:disabled{
+  cursor: no-drop;
+}
+#next-btnn{
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+.correct{
+  background: #9aeabc;
+}
+.incorrect{
+  background: #ff9393;
 }
