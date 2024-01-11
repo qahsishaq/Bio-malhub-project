@@ -13,20 +13,21 @@
     />
   </head>
   <body>
-    <!-- Start Quiz Button -->
+    <!-- Start Quiz Button -->`
     <div class="start-btn"><button>Start Quiz</button></div>
     <!-- info Box -->
     <div class="info-box">
       <span class="some-rules">Some Rules of this Quiz</span>
       <div class="info-list">
         <div class="info">
-          1. You  have 150 seconds to answer <span>15 seconds  per question recommended.</span>.
+          1. You have 150 seconds to answer.
+          <span>15 seconds per question is recommended</span>.
         </div>
         <div class="info">
           2. Once you select your answer, it cannot be undone.
         </div>
         <div class="info">
-          3. You can't select any option once timer goes off.
+          3. You may select an option even when the timer goes off.
         </div>
         <div class="info">4. You can't exit from an ongoing Quiz session.</div>
         <div class="info">
@@ -43,7 +44,7 @@
     <!-- Quiz Box -->
     <div class="quiz-box">
       <header>
-        <div class="title">Fantastic Quiz Application</div>
+        <div class="title">Functional Quiz Application</div>
         <div class="timer">
           <div class="timer-left-txt">Time Left</div>
           <div class="timer-sec">15</div>
@@ -54,35 +55,14 @@
         <div class="question" id="question">
           <!-- Here I will insert questions from Javascript -->
         </div>
-        <!-- <div class="option-list"> -->
-          <!-- Here I will insert options list from Javascript -->
-          <!-- '<div class="option"><span>' +
-            questions[index].options[0] +
-            '</span></div>'+
-          '<div class="option"><span>' +
-            questions[index].options[1] +
-            '</span></div>' +
-            '<div class="option"><span>' +
-            questions[index].options[2] +
-            '</span></div>'+
-            '<div class="option"><span>' +
-            questions[index].options[3] +
-            '</span></div>'; -->
-
-    
-        <!-- </div> -->
-
-<!--  DEMO BUTTON OPTIONS -->
-              <div id="answer-buttons">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
-              </div>
-              <button id="next-btnn">Next</button>
-
-
-
+        <!--  DEMO BUTTON OPTIONS -->
+        <div id="answer-buttons">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
+        </div>
+        <button id="next-btnn">Next</button>
       </header>
       <!-- footer of Quiz Box -->
       <footer>
@@ -100,16 +80,15 @@
       </div>
       <div class="complete-text">You've completed the Test!</div>
       <div class="score-text">
-        <!--score result will be inserted from Javascript -->
+        <!-- score result will be inserted from Javascript -->
       </div>
       <div class="buttons">
         <button class="restart">Replay Quiz</button>
         <button class="quit">Quit Quiz</button>
       </div>
-    </div>
+    </div> 
   </body>
   <script src="JavaScript/questions.js"></script>
   <script src="./JavaScript/script.js"></script>
   <script src="./JavaScript/secondquestion.js"></script>
-  <script src="https://kit.fontawesome.com/f65ffccb95.js" crossorigin="anonymous"></script>
 </html>

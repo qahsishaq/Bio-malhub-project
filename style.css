@@ -7,7 +7,8 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #52f8e5;
+background-color: #57d9f1
+;
 }
 ::selection {
   color: white;
@@ -53,7 +54,7 @@ body {
   pointer-events: none;
   transition: all 0.3s ease;
 }
-.some-rules{
+.some-rules {
   margin-left: 10%;
   color: #89b6b0;
   font-size: 20px;
@@ -79,7 +80,6 @@ body {
 .info-box .info-list .info span {
   font-weight: 600;
   color: #52f8e5;
-
 }
 .info-box .buttons {
   height: 60px;
@@ -169,7 +169,7 @@ section {
   padding: 25px 30px 20px 30px;
   background: white;
 }
-section .question{
+section .question {
   font-size: 25px;
   font-weight: 600;
 }
@@ -178,64 +178,6 @@ section .option-list {
   display: block;
 }
 
-section .option-list .option{
-  background: aliceblue;
-  border: 1px solid #52f8e5;
-  border-radius: 5px;
-  padding: 8px 15px;
-  font-size: 17px;
-  margin-bottom: 15px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-section .option-list .option:last-child {
-  margin-bottom: 0px;
-}
-section .option-list .option:hover {
-  color: #231eb4;
-  background: #cce5ff;
-  border: 1px solid #b8daff;
-}
-/* 
-section .option-list .option.correct {
-  color: #155724;
-  background: #d4edda;
-  border: 1px solid #c3e6cb;
-}
-
-section .option-list .option.incorrect {
-  color: #721c24;
-  background: #f8d7da;
-  border: 1px solid #f5c6cb;
-} */
-section .option-list .option.disabled {
-  pointer-events: none;
-}
-
-section .option-list .option .icon {
-  height: 26px;
-  width: 26px;
-  border: 2px solid transparent;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 13px;
-  pointer-events: none;
-  transition: all 0.3s ease;
-  line-height: 24px;
-}
-.option-list .option .icon.tick {
-  color: #23903c;
-  border-color: #23903c;
-  background-color: #d4edda;
-}
-.option-list .option .icon.cross {
-  color: #a42834;
-  background: #f8d7da;
-  border-color: #a42834;
-}
 footer {
   height: 60px;
   padding: 0 30px;
@@ -351,17 +293,15 @@ footer button.show {
   color: #fff;
   background: #007bff;
 }
-#headie{
+#headie {
   display: flex;
   flex-direction: column;
   height: fit-content;
   padding-bottom: 9px;
 }
 
-
-
 /* DEMO */
-.btn{
+.btn {
   background-color: white;
   color: #222;
   font-weight: 500;
@@ -374,15 +314,14 @@ footer button.show {
   cursor: pointer;
   transition: all 0.3s;
 }
-.btn:hover:not([disabled]){
+.btn:hover:not([disabled]) {
   background-color: black;
-  color:white;
-
+  color: white;
 }
-.btn:disabled{
+.btn:disabled {
   cursor: no-drop;
 }
-#next-btnn{
+#next-btnn {
   background: #001e4d;
   color: #fff;
   font-weight: 500;
@@ -395,9 +334,17 @@ footer button.show {
   display: none;
 }
 
-.correct{
+.correct {
   background: #9aeabc;
 }
-.incorrect{
+.incorrect {
   background: #ff9393;
+}
+
+@media (max-width: 620px) {
+  .info-box{
+    width: 80%;  }
+    .quiz-box{
+       width: 390px;
+    }
 }
