@@ -11,4 +11,5 @@
  This is a project to showcase  little, out of a lot, that I acquired  from the Front-end Course offered by this outstanding institution, MALHUB.
 
                                 Let's get down to business!
-I 
+I watched a couple of youtube videos, which served has a guide when building this project. The synchronization of Javascript concepts, styling of HTML with CSS, is what this small project is all about. Surely, there must be bugs and a better approach to making a quiz app. I hope to get better and better everyday by honing my Front-end skills,
+all thanks to Malhub.
