@@ -11,5 +11,5 @@
  This is a project to showcase  little, out of a lot, that I acquired  from the Front-end Course offered by this outstanding institution, MALHUB.
 
                                 Let's get down to business!
-I watched a couple of YouTube videos, which served has a guide while building this project. The synchronization of Javascript concepts, styling of HTML with CSS, is what this small project is all about. Surely, there must be bugs and a better approach to making a tech-quiz-evaluation app. I hope to get better and better everyday by honing my Front-end skills,
+I watched a couple of YouTube videos, which served has a guide while building this project. This small project is all about synchronizing JavaScript concepts and styling HTML with CSS. Surely, there must be bugs and a better approach to making a tech-quiz-evaluation app. I hope to get better and better everyday by honing my Front-end skills,
 all thanks to Malhub.
