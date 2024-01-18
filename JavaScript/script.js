@@ -10,7 +10,6 @@ const time_line = document.querySelector("header .time-line");
 const timeText = document.querySelector(".timer .time-left-txt");
 const timeCount = document.querySelector(".timer .timer-sec");
 const option_work = document.querySelector(".option");
-
 //if startQuiz button clicked
 
 start_btn.onclick = () => {
@@ -51,6 +50,7 @@ const next_btn = document.querySelector("footer .next-btn");
 const bottom_ques_counter = document.querySelector("footer .total-que");
 const answerButtons = document.getElementById("answer-buttons");
 const questionElement = document.getElementById("question");
+const stats = document.getElementById("statistics");
 const nextButton = document.getElementById("next-btnn");
 let currentQuestionIndex = 0;
 function startQuiz() {
@@ -93,10 +93,9 @@ function selectAnswer(e) {
     score++;
   } else {
     selectedBtn.classList.add("incorrect");
-    
   }
 
-// This part works for the automatically selected option after selecting an optio
+  // This part works for the automatically selected option after selecting an optio
   Array.from(answerButtons.children).forEach((button) => {
     if (button.dataset.correct === "true") {
       button.classList.add("correct");
@@ -110,8 +109,77 @@ function showScore() {
   questionElement.innerHTML = `😁You scored ${score} out of ${questions2.length}!`;
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
-
+  stats.style.display = "block";
+  //SCORE CONDITIONS
+  if (score == 15) {
+    stats.textContent = "Tech Genius! You are among the top 0.1%🤯";
+    console.log(stats.textContent);
+    alert(stats.textContent);
+  } else if (score == 14) {
+    stats.textContent = "Tech Expert! You are among the top 0.5%🥶";
+    console.log(stats.textContent);
+    alert(stats.textContent);
+  } else if (score == 13) {
+    stats.textContent = "Tech Guru! You are among the top 1%😲";
+    console.log(stats.textContent);
+    alert(stats.textContent);
+  } else if (score == 12) {
+    stats.textContent = "Tech Master! You are among the top 2%😎";
+    console.log(stats.textContent);
+    alert(stats.textContent);
+  } else if (score == 11) {
+    stats.textContent = "Tech Savant! You are among the top 5%😁";
+    console.log(stats.textContent);
+    alert(stats.textContent);
+  } else if (score == 10) {
+    stats.textContent = "Tech Literate! You are among the top 10%😊";
+    console.log(stats.textContent);
+    alert(stats.textContent);
+  } else if (score == 9) {
+    stats.textContent = "Tech Adept! You are among the top 20%😀";
+    console.log(stats.textContent);
+    alert(stats.textContent);
+  } else if (score == 8) {
+    stats.textContent = "Tech Savvy! You are among the top 35%🎉";
+    console.log(stats.textContent);
+    alert(stats.textContent);
+  } else if (score == 7) {
+    stats.textContent = "Average Tech Knowledge! You are among the top 50%😃";
+    console.log(stats.textContent);
+    alert(stats.textContent);
+  } else if (score == 6) {
+    stats.textContent = "Tech Novice! You are among the top 65%😆";
+    console.log(stats.textContent);
+    alert(stats.textContent);
+  } else if (score == 5) {
+    stats.textContent =
+      "Limited Tech Understanding! You are among the top 80%😬";
+    console.log(stats.textContent);
+    alert(stats.textContent);
+  } else if (score == 4) {
+    stats.textContent = "Technologically challenged! You are among the top 90%";
+    console.log(stats.textContent);
+    alert(stats.textContent);
+  } else if (score == 3) {
+    stats.textContent = "Tech Illiterate! You are among the top 95%";
+    console.log(stats.textContent);
+    alert(stats.textContent);
+  } else if (score == 2) {
+    stats.textContent = "You need knowledge! You are among the top 98%";
+    console.log(stats.textContent);
+    alert(stats.textContent);
+  } else if (score == 1) {
+    stats.textContent = "Give up! You are among the bottom 2%🤕";
+    console.log(stats.textContent);
+    alert(stats.textContent);
+  } else if (score == 0) {
+    stats.textContent =
+      "Technological Abyss! You are among the the bottom 2%🤕";
+    console.log(stats.textContent);
+    alert(stats.textContent);
+  }
 }
+
 function handleNextButton() {
   currentQuestionIndex++;
   if (currentQuestionIndex < questions2.length) {
@@ -120,7 +188,7 @@ function handleNextButton() {
     showScore();
   }
 }
-function showResult(){
+function showResult() {
   clearInterval(counter); // clear counter
   clearInterval(counterLine); // clear counterLine
   startTimer(timeValue); // calling startTimer function
@@ -132,7 +200,7 @@ nextButton.addEventListener("click", () => {
   } else {
     startQuiz();
   }
-  if (que_count < questions.length - 1) {
+  if (que_count < questions2.length - 1) {
     //if question count is less than total question length
     que_count++; //increment the que_count value
     que_numb++; //increment the que_numb value
@@ -148,9 +216,7 @@ nextButton.addEventListener("click", () => {
     clearInterval(counter); //clear counter
     clearInterval(counterLine); //clear counterLine
   }
-}
-
-);
+});
 startQuiz();
 function startTimer(time) {
   counter = setInterval(timer, 1000);
