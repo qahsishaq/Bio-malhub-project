@@ -52,7 +52,7 @@ const questions2 = [
     ],
   },
   {
-    question: "Images are made up of tiny little boxes known as....?",
+    question: "Images on a screen are made up of tiny little boxes known as....?",
     answers: [
       { text: "Bits", correct: false },
       { text: "Dots", correct: false },
