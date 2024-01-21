@@ -72,7 +72,7 @@ body {
   margin: 5px 0;
   font-size: 17px;
 }
-.info-box .info-list .info #note{
+.info-box .info-list .info #note {
   color: #c6a83b;
   font-weight: 900;
 }
@@ -235,32 +235,10 @@ footer button.show {
   pointer-events: none;
   transition: all 0.3s ease;
 }
-.result-box .icon {
-  font-size: 100px;
-  color: #007bff;
-  margin-bottom: 10px;
-}
-.result-box .complete-text {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.result-box .score-text span {
-  display: flex;
-  margin: 10px 0;
-  font-size: 18px;
-  font-weight: 500;
-}
-.result-box .score-text span p {
-  padding: 0 4px;
-  font-weight: 600;
-}
 .result-box .buttons {
-  display: flex;
   margin: 20px 0;
 }
 .result-box .buttons button {
-  margin: 0 10px;
   height: 45px;
   padding: 0 20px;
   font-size: 18px;
@@ -382,6 +360,6 @@ footer button.show {
   box-shadow: 1px 2px 3px rgb(144, 137, 137);
   border-radius: 4px;
 }
-.instruct{
-  color: #c6a83b ;
+.instruct {
+  color: #c6a83b;
 }
